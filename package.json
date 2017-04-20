@@ -1,0 +1,20 @@
+{
+  "name": "docker-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brgmnn/docker-example.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brgmnn/docker-example/issues"
+  },
+  "homepage": "https://github.com/brgmnn/docker-example#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
