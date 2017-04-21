@@ -9,11 +9,13 @@ LABEL maintainer "Daniel Bergmann"
 # Expose port 3000 from the container
 EXPOSE 3000
 
-# Copy our local Javascript app files to the image and place them in the folder /app, set /app as
-# the working directory and install npm dependencies.
-ADD *.js package.json /app/
+# Copy the package.json file over, set /app as the working directory and install npm dependencies.
+ADD package.json /app/
 WORKDIR /app
 RUN npm install -q
+
+# Add the apps files
+ADD *.js /app/
 
 # Default command to run when we start the container
 CMD node server.js
